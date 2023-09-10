@@ -1,0 +1,268 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+*:after, *:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset, img {
+  border: 0;
+  display: initial;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none;
+}
+caption, th {
+  text-align: left;
+}
+q:before, q:after {
+  content: '';
+}
+abbr, acronym {
+  border: 0;
+}
+header, nav, section, article, aside, footer, hgroup, figure {
+  display: block;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.wrapper {
+  overflow-x: hidden;
+  overflow: hidden;
+}
+/************Firefox*****************/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+button:focus, input:focus {
+    outline: none;
+    box-shadow: none;
+    outline-color: transparent;
+    outline-width: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, figure {
+  margin-bottom: 0;
+}
+html, body {
+  max-width: 100%; /*overflow-x: hidden;*/
+}
+.modal-content {
+  border: 0;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+a, a:hover {
+  text-decoration: none;
+  outline: 0;
+  outline-color: transparent;
+  outline-width: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-group {
+  position: relative;
+}
+.wrapper {
+  overflow-x: hidden;
+}
+boddy {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+boddy::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --black-fonts: #2D2E2E;
+  --darkgreen: #3A4F39;
+  --grey-input: #ABABAB;
+  --light-grey: #F6F6F6;
+  --light-green-bg: #EFF6F3;
+  --yellow: #F8D254;
+  --green: #A0CD9E;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+a:focus, a:hover {
+  text-decoration: none;
+  outline: 0;
+  color: var(--white);
+}
+h1 {
+  font: normal 600 50px/auto 'Paytone One';
+  color: var(--orange);
+}
+h2 {
+  font: normal 600 32px/auto 'Paytone One';
+  color: var(--white)
+}
+p {
+  font: normal 400 12px/auto 'Poppins';
+  color: var(--black)
+}
+h3 {
+  font: normal 400 32px/normal 'poppins';
+}
+h4 {
+  color: #000;
+  font: normal 400 32px/54px 'Poppins';
+}
+h5 {
+  color: #000;
+  font: normal 500 40px/normal 'Poppins';
+}
+h6 {
+  color: #52525B;
+  text-align: center;
+  font: normal 400 18px/30px 'Poppins';
+}
+.nav-link {
+  position: relative;
+  text-transform: uppercase;
+}
+/************start about css************/
+.navbar {
+  background: #eee1;
+  border-bottom: 1px solid #eee5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  margin: auto;
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 60px;
+  width: 100px;
+}
+.navs {
+  display: flex;
+  float: right;
+  margin-left: auto;
+  align-items: center;
+  align-content: center;
+}
+.nav-links {
+  flex: 1 1 2rem;
+  padding: 5px 10px;
+  margin: 2px 4px;
+}
+.nav-links a {
+  border-radius: 2px;
+  border: none;
+  font: normal 500 15px/100%;
+  padding: 5px 10px;
+  background: #eee9;
+  text-transform: capitalize;
+  color: #333;
+  transition: all .3s ease;
+}
+.nav-links a:hover {
+  color: #3338;
+  background: #eee5;
+}
+.contactussection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.heading-title {
+  font: normal 500 25px/25px;
+  text-transform: uppercase;
+}
+.contact-btn {
+  text-transform: capitalize;
+  position: relative;
+  margin: auto;
+  display: block;
+  transition: all .3s linear;
+  color: #333;
+  background: #eee;
+  border: none;
+  offset: none;
+  font: normal 500 16px/25px;
+  padding: 5px 10px;
+  margin: 50px auto;
+  float: auto;
+}
+.contact-btn:hover, .contact-btn:focus, .contact-btn:visited {
+  background: #aaa;
+  color: #eee;
+}
+.contact-btn::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .4s linear;
+}
+.contact-btn:hover:before {
+  background: #ddd;
+  color: #333;
+  transform: scale(0, 1);
+  z-index: 9;
+}
+/***********css for the contact page**********/
+.form-table {
+	width: 100%;
+    display: flex;flex-direction: row;
+}
+.form-table :after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-body div{
+    margin-bottom: 10px;
+    float: left; 
+    width: 50%;
+    flex: 1 1;/*    margin-right: -100px;*/
+}.form-body div label{
+	margin-bottom: 10px;
+}.formmr {
+    /* [disabled]width: 50%; */
+
+}
